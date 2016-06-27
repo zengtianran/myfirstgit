@@ -1,0 +1,161 @@
+@charset "utf-8";
+#mywrap {
+	width: 1100px;
+	margin: 20px auto;
+	background-color: #fff;
+}
+/* year select */
+.ztrcalendar-sel {
+	height: 55px;
+	margin-bottom: 35px;
+	line-height: 55px;
+	text-align: center;
+	background-color: #f7f7f7;
+}
+.sel-ztryear {
+	display: none;
+	margin: 0 10px;
+}
+.ztr-year{
+	display: inline-block;
+	margin: 0 12px 0 10px;
+	font-size: 16px;
+	line-height: 21px;
+	color: #666;
+}
+.ztr-yearprev,
+.ztr-yearnext {
+	cursor: pointer;
+	display: inline-block;
+	color: #c7c7c7;
+	line-height: 21px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.ztr-yearprev:hover,
+.ztr-yearnext:hover{ color: #4988c7; }
+.ztrcalendar-warp {
+	height: 400px;
+	float: left;
+	margin-left: 26px;
+}
+
+.ztrcalendar-warp .line {
+	float: left;
+	height: 400px;
+	border-bottom: 1px dotted #666;
+}
+
+.ztrcalendar-warp .nowmonth .clsMonth {
+	height: 25px;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #666;
+	border-bottom: 5px solid #dcdcdc;
+}
+
+
+/*holiday icon*/
+
+.ztr-icon {
+	position: absolute;
+	height: 14px;
+	width: 14px;
+	text-align: center!important;
+	font-size: 12px!important;
+	line-height: 14px!important;
+}
+
+.icon-j {
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	background: #7abd64;
+}
+
+.icon-g {
+	top: 0;
+	right: 0;
+	color: #e54040;
+}
+
+.icon-b {
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	background: #83c1fe;
+}
+
+.icon-x {
+	left: 15px;
+	bottom: 0;
+	color: #fff;
+	background: #ff8b66;
+	display:none;
+}
+
+
+/* week */
+
+.ztrcalendar-warp .week{ border-bottom: 1px solid #dcdcdc; }
+.ztrcalendar-warp .week td ul {
+	width: 336px;
+	height: 40px;
+	border-bottom: 2px solid #ddd;
+	clear: both;
+}
+
+.ztrcalendar-warp .week td ul li {
+	float: left;
+	width: 46px;
+	height: 48px;
+	font-size: 12px;
+	line-height: 48px;
+	text-align: center;
+	border: 1px solid #FFFFFF;
+	background: #ffffff;
+}
+
+
+/* day */
+
+.ztrcalendar-warp .day .daylist {
+	height: 48px;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+}
+
+.ztrcalendar-warp .day .daylist li {
+	float: left;
+	position: relative;
+	width: 46px;
+	height: 48px;
+	font-family: "arial narrow";
+	font-size: 21px;
+	line-height: 48px;
+	text-align: center;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+.ztrcalendar-warp .day .daylist li:hover { background: #f4f4f4; }
+
+.ztrcalendar-warp .day .hide { display: none; }
+
+.ztrcalendar-warp .weekend { color: #ef4929; font-weight:bolder; }
+
+/*.ztrcalendar-warp .day .todayweekend {
+	color: #ef4929;
+	background: #0a0 !important;
+	font-weight: bolder;
+}*/
+
+.ztrcalendar-warp .day .daylist li.active {
+	border-left: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+	background: url(../img/project-img/icon-calendar-activebg.png) no-repeat;
+	background-position: 37px 39px;
+}

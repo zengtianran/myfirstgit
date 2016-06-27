@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> ztr日历 </title>
+	<script type="text/javascript" src="jquery.1.91.min.js"></script> 
+    <script type="text/javascript" src="ztrcalendar.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/ztrcalendar.css" />
+    <style type="text/css">
+        .holiday-tip{
+	       		width: 74px;
+			    background:#fff;
+			    font-size:14px;
+			    color:#636363;
+			    position:absolute;
+			    left:0;
+			    top:0;
+			    display:none;
+			    border: 1px solid #e8e8e8;
+		   }
+	  	.holiday-tip ul li{
+		    cursor:pointer;
+		    padding:10px 0;
+		    text-align: center;
+		  }
+		.holiday-tip ul li.holiday-check-first{ border-bottom:1px solid #e8e8e8; }
+    </style>
+</head>
+<body>
+<div id='mywrap'>
+	 
+</div>
+<div class="holiday-tip">
+  <ul>
+     <li class="holiday-check-first"><em class="icon-agreement ck-xin"></em><a>带薪</a></li>
+     <li><em class="btn-check-bluecircle" data-mholiday="b"></em><a>上班</a></li>
+     <li><em class="btn-check-bluecircle" data-mholiday="j"></em><a>休息</a></li>
+  </ul>
+</div>
+</body>
+</html>
